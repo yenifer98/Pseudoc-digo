@@ -1,0 +1,88 @@
+\documentclass[letterpaper,12pt]{article}
+\usepackage{geometry}
+\geometry{left=2 cm,right=2cm, top=3cm, bottom=2cm, top=2cm}
+\usepackage{currvita} 
+\usepackage[utf8]{inputenc}% para sacar las tildes y Ñ
+\usepackage[spanish]{babel}% por si aparece algo en ingles
+\usepackage{graphicx}%ingresar imagen
+\usepackage{amssymb} %para utilizar signos
+\title{Pseudocódigo }
+\usepackage{lastpage} %ultima pagina
+\usepackage{enumitem}
+\date{} %para que no aparesca la fecha
+\setlength{\parskip}{0.01cm}% espacio ente texto y texto
+\begin{document}\ \ % lo dos \\ se utilizan hay para crear una hoja en blanco
+
+\begin{titlepage}
+	\centering
+	{\scshape\LARGE\bfseries   UNIVERSIDAD DEL VALLE \par}\vspace{1cm}
+	\vspace{2.5cm}
+	{\scshape\Large  ACTIVIDAD 5\par}
+	\vspace{2.5cm}
+	{\huge Algoritmo en Pseint\\Diagramas de flujo\par} %\bfseries NEGRILLA %bf
+	\vspace{2cm}
+	{\Large YENIFER ANDREA BELTRAN BETIN\par} %\itshape CURSIVA
+{\Large  CÓDIGO 201960124\par}% \scshape SE VEA GRANDE
+	\vspace{2.5cm}
+	\vfill
+	ZARZAL-VALLE\par
+	
+
+	\vfill
+
+% Bottom of the page
+	{\large \today\par}
+\end{titlepage}
+\maketitle
+ Pseudocódigo o falso Lenguaje, Es comúnmente utilizado por los programadores para omitir secciones de Código o para dar una explicación del paradigma que tomó el mismo programador para hacer sus códigos, esto quiere decir que el pseudocódigo no es programable sino facilita la programación.\\
+El principal objetivo del pseudocódigo es el de representar la solución a un algoritmo de la forma más detallada posible, y a su vez lo más parecida posible al lenguaje que posteriormente se utilizará para la codificación del mismo.\\
+En este informe se realiza uno de los ejemplos de una función recursiva que ofrece Pseint, el cual es calcular la  potencia, no obstante se recurrio a utilizar el siguiente Pseudocódigo:
+
+\begin{verbatim}
+// Implementación del cálculo de una potencia mediante una función recursiva
+// El paso recursivo se basa en que A^B = B*(A^(B-1))
+// El paso base se base en que A^0 = 1
+
+SubProceso  resultado <- Potencia (base, exponente)
+    Si exponente=0 Entonces
+        resultado <- 1;
+    sino 
+        resultado <- base*Potencia(base,exponente-1); 
+    FinSi
+FinSubProceso
+
+Proceso DosALaDiezRecursivo
+    Escribir "Ingrese Base"
+    Leer base
+    Escribir "Ingrese Exponente"
+    Leer exponente
+    Escribir "El resultado es ",Potencia(base,exponente)
+FinProceso
+\end{verbatim}
+con la informacion anterior se puede observar como el programa toma el código y realiza la funcion; este procedimiento se puede apreciar en la figura 1. 
+
+\begin{figure}[h!]
+\centering 
+\includegraphics[width=\linewidth]{1.jpg}%[width=8cm, height=5cm] opciones de imagen
+\caption{Pseudocódigo}
+\label{Figura: 1}
+\end{figure}
+\vspace{10cm} %espacio
+como podemos observar el código que digitamos, contiene un algoritmio principial y en base a este realiza su funcion; de igual manera al ejecutarlo nos pide una numero base y su exponente para asi poder dar un resultado.
+\\
+\section{Diagrama de flujo}
+Pseint tiene una opción de crear un diagrama de flujo en donde se oberva desde otro punto de vista los comandos o estructuras de nuestro codigo, como vemos en la figura 2.
+\begin{figure}[h!]
+\centering 
+\includegraphics[width=\linewidth]{2.jpg}
+\caption{Diagrama de flujo}
+\label{Figura: 2}
+\end{figure}
+
+con la figura anterior se puede observar como pseint, da varias opciones de diagramas de flujo segun comando o estructura; con este paso damos por finalizado esta practica.
+\\ En conclusión, Pseint es un programa que brinda ayudas a escribir algoritmos utilizando un pseudo-lenguaje simple, intuitivo y en español.\\
+\section{Referencias Bibliograficas}
+Toda esta información es basada con los apuntes vistos en las clases virtuales de la asignatura algoritmia y programación, además se recurrio a utilizar el programa Pseint.
+
+
+\end{document}
